@@ -4,6 +4,7 @@ const YTDL = require("ytdl-core");
 const TOKEN = "Imput token here"
 const PREFIX = "?"
 //Project is finnished. No further updates.
+//Created and programed by InstaLight
 
 
 var fourtunes = [
