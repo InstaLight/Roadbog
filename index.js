@@ -3,6 +3,7 @@ const YTDL = require("ytdl-core");
 
 const TOKEN = "Imput token here"
 const PREFIX = "?"
+//Project is finnished. No further updates.
 
 
 var fourtunes = [
@@ -103,6 +104,9 @@ break;
 
 case "skip":
 var server = servers[message.guild.id];
+        
+    case "important":
+        message.channel.send("Project is finished.")
 
 if (server.dispatcher) server.dispatcher.end();
 break;
@@ -114,10 +118,11 @@ if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
 break;
 
 case "changelog":
-message.channel.send("RoadBog v1.1.0")
+message.channel.send("RoadBog v1.1.1")
 message.channel.send("-Made help command look nicer")
 message.channel.send("-Added changelog command")
 message.channel.send("-Updated help command")
+        message.channel.send("-Project is finished. No further updates :(.")
 break;
 
 
